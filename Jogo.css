@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    background-image: url(dungeon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 8px);
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "espaco1"
+    "areajogavel";
+    grid-template-columns: calc(100%-8px);
+    grid-template-rows: 10vh 80vh 8vh;
+}
+.espaco1{
+    grid-area: espaco1;
+}
+.areajogavel{
+    grid-area: areajogavel;
+    display: grid;
+    grid-template-areas: "blank1 mapa blank2";
+    grid-template-columns: 35vw 60vh 30vw;
+    grid-template-rows: 60vh;
+}
+.espacamento1{
+    grid-area: blank1;
+}
+.mapa{
+    grid-area: mapa;
+    display:flex;
+    flex-wrap: wrap;
+}
+.area{
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+}
+.espacamento2{
+    grid-area: blank2;
+}
+p{
+    font-size: xx-large;
+    color: rgb(101, 49, 160);
+    font-family: fantasy;
+}

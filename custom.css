@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    background-image: url(dungeon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 8px);
+    height: 100%;
+}

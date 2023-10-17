@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="gameover.css">
+    <link rel="icon" href="masmorralogo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+</head>
+
+<body onload="mudartexto()">
+    <div class="container">
+        <audio id="gameoverbell" src="Gameoverbell.mp3"></audio>
+        <div id="espaco"></div>
+        <div id="titulo">
+            <h1>Game Over</h1>
+        </div>
+        <div id="regras">
+            <p>Você sbuiu 0 andares.</p>
+        </div>
+        <div id="espacob"></div>
+        <div id="botao" onclick="window.location.href='inicio.html'">
+            <h2 id="opcoes1" onmouseover="highlight(1)" onmouseleave="unhighlight(1)">Voltar para o menu</h2>
+        </div>
+        <div id="blank"></div>
+        <div id="formulario">
+            <form>
+                <h3>Salve seu nome na página de High Scores!</h3>
+                <input type="text" id="formnome" name="formnome"> 
+            </form>
+        </div>
+    </div>
+    <script src="highlight.js"></script>
+    <script src="gameover.js"></script>
+</body>
+
+</html>

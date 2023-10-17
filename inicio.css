@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+    background-image: url(dungeon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 8px);
+    height: 100%;
+}
+
+h1 {
+    color: rgb(172, 2, 2);
+    font-size: 10vh;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+p {
+    font-size: 5vh;
+    color: red;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-row-gap: 5vh;
+    grid-template-areas:
+        "espaco"
+        "titulo"
+        "botoes"
+        "custom"
+        "rodape";
+    grid-template-columns: calc(100% - 8px);
+    grid-template-rows: 15vh 20vh 5vh 5vh 20vh;
+}
+
+.espaco {
+    grid-area: espaco;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes {
+    grid-area: botoes;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 5vw;
+    align-items: center;
+}
+
+#custom{
+    grid-area: custom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jogar {
+    width: 15vw;
+    height: 15vh;
+    font-family: Impact, fantasy;
+}
+
+#regras {
+    width: 13vw;
+    height: 15vh;
+    font-family: Impact, fantasy;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+#highscores {
+    font-family: Impact, fantasy;
+}
+
+#opcoes4{
+    font-size: 5vh;
+    color: rgb(246, 12, 246);
+    font-family: Impact, fantasy;
+}

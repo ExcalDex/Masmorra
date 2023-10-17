@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="masmorralogo.png" type="image/png">
+    <link rel="stylesheet" href="highscore.css">
+    <title>High Scores</title>
+</head>
+<body onload="maketable()">
+    <div id="container">
+        <div id="title">
+            <h1>High Scores</h1>
+        </div>
+        <div id="blank1"></div>
+        <div id="areatabela">
+            <table id="tabela">
+                <thead>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="blank2"></div>
+        <div id="voltar">
+            <h2 id="opcoes1" onmouseover="highlight(1)" onmouseleave="unhighlight(1)" onclick="window.location.href='inicio.html'">Voltar</h2>
+        </div>
+    </div>
+    <script src="highlight.js"></script>
+    <script src="highscore.js"></script>
+</body>
+</html>

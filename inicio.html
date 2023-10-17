@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" href="masmorralogo.png" type="image/png">
+    <title>Menu</title>
+</head>
+
+<body onload="resetcontador()">
+    <div class="container">
+        <div class="espaco">
+        </div>
+        <div class="titulo">
+            <h1>MASMORRA</h1>
+        </div>
+        <div class="botoes">
+            <div id="jogar">
+                <p id="opcoes1" onclick="window.location.href='Jogo.html'" onmouseover="highlight(1)" onmouseleave="unhighlight(1)">Modo Clássico</p>
+            </div>
+            <div id="regras">
+                <p id="opcoes2" onclick="window.location.href='regras.html'" onmouseover="highlight(2)" onmouseleave="unhighlight(2)">Ver Regras</p>
+            </div>
+            <div id="highscores">
+                <p id="opcoes3" onclick="window.location.href='highscore.html'" onmouseover="highlight(3)" onmouseleave="unhighlight(3)">Ver High Score</p> 
+            </div>
+        </div>
+        <div id="custom">
+            <p id="opcoes4" onclick="window.location.href='custom.html'" onmouseover="highlight(4)" onmouseleave="unhighlight(4)">Modo Customizado</p>
+        </div>
+        <div class="rodape"></div>
+    </div>
+    <script src="highlight.js"></script>
+</body>
+
+</html>
